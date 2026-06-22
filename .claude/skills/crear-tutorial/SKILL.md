@@ -153,6 +153,7 @@ Cuando se pida crear uno o varios tutoriales:
 4. **Escribe las fichas** respetando el formato, con ejemplos genéricos y autónomos.
 5. **Crea o actualiza el `README.md`-índice** de la carpeta: añade cada ficha a la tabla de orden de lectura (en su posición temática, renumerando `#` si hace falta) y, si procede, al índice colapsable.
 6. **Verifica los enlaces.** Toda ruta relativa debe resolver (nombre de archivo exacto, mayúsculas incluidas).
+7. **Haz commit y push si la sesión ha sido satisfactoria.** Cuando el trabajo esté terminado y verificado (todas las fichas creadas, el índice actualizado y los enlaces comprobados), haz `git add` de lo nuevo, un `git commit` con un mensaje descriptivo en español (p. ej. `Añade guía de <tema>`) y un `git push`. Si algo quedó incompleto, falló o la usuaria no está conforme, **no** hagas commit ni push: deja los cambios en el working tree y coméntalo.
 
 ## Checklist final
 
@@ -166,3 +167,4 @@ Antes de dar por terminado:
 - [ ] El código de ejemplo usa nombres genéricos y reconocibles, no `foo`/`bar` ni nombres de un proyecto privado.
 - [ ] Cada ficha cierra con `---` y la frase `*En resumen: ...*`.
 - [ ] La carpeta tiene un `README.md`-índice con enlaces a todas las fichas, y todos los enlaces funcionan.
+- [ ] Si la sesión ha sido satisfactoria, se ha hecho `commit` y `push` de los cambios (y, si no lo ha sido, los cambios se han dejado sin subir y se ha avisado).
