@@ -26,7 +26,8 @@ Conectarte a una máquina para usarla como si estuvieras delante de ella.
 |---|---|---|
 | 2 | [Escritorio Remoto (RDP)](Escritorio-Remoto.md) | Ver y manejar la pantalla de otro equipo Windows. El caso más reconocible. |
 | 3 | [VNC](VNC.md) | La alternativa multiplataforma al escritorio remoto. Léela tras RDP para comparar. |
-| 4 | [SSH](SSH.md) | Controlar un equipo por terminal de forma segura. Imprescindible para servidores. |
+| 4 | [Herramientas de Control Remoto](Herramientas-de-Control-Remoto.md) | TeamViewer, AnyDesk y similares: control remoto sin tocar la red. |
+| 5 | [SSH](SSH.md) | Controlar un equipo por terminal de forma segura. Imprescindible para servidores. |
 
 ### 3. Compartir archivos
 
@@ -34,9 +35,10 @@ Poner ficheros en común entre varios equipos.
 
 | # | Archivo | Por qué leerlo aquí |
 |---|---|---|
-| 5 | [Carpeta Compartida (SMB)](Carpeta-Compartida.md) | La forma clásica de compartir una carpeta en la red local. |
-| 6 | [NAS](NAS.md) | Un disco compartido dedicado para toda la red. Se apoya en lo anterior. |
-| 7 | [FTP y SFTP](FTP-y-SFTP.md) | Subir y bajar archivos contra un servidor. Lectura rápida. |
+| 6 | [Carpeta Compartida (SMB)](Carpeta-Compartida.md) | La forma clásica de compartir una carpeta en la red local. |
+| 7 | [NAS](NAS.md) | Un disco compartido dedicado para toda la red. Se apoya en lo anterior. |
+| 8 | [FTP y SFTP](FTP-y-SFTP.md) | Subir y bajar archivos contra un servidor. Lectura rápida. |
+| 9 | [WebDAV](WebDAV.md) | Carpetas remotas a través de la web, montadas como una unidad más. |
 
 ### 4. Acceso seguro desde fuera
 
@@ -44,7 +46,8 @@ Cómo usar todo lo anterior desde fuera de la red local sin abrir agujeros.
 
 | # | Archivo | Por qué leerlo aquí |
 |---|---|---|
-| 8 | [VPN](VPN.md) | La puerta segura que conecta tu equipo con una red remota. Cierra la guía porque envuelve a todo lo demás. |
+| 10 | [VPN](VPN.md) | La puerta segura que conecta tu equipo con una red remota. La opción recomendada para acceder desde fuera. |
+| 11 | [Redirección de Puertos](Redireccion-de-Puertos.md) | La alternativa a la VPN para exponer un servicio a internet. Léela al final: hay que usarla con cuidado. |
 
 ---
 
