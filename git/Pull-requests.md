@@ -41,6 +41,22 @@ Quien revisa deja comentarios; tú respondes haciendo más commits en la misma r
 
 La rama suele borrarse al fusionar el PR, para no acumular ramas viejas.
 
+**5. Los checks: robots que revisan antes que las personas**
+
+Al abrir (o actualizar) un PR, la plataforma puede lanzar automáticamente los *workflows* de CI — compilar, pasar tests, lint (ver [GitHub Actions](GitHub-Actions.md)). El resultado aparece en el propio PR como ✅ o ❌ junto a cada check. La gracia es el **momento**: el error se detecta *antes* de fusionar, cuando aún no ha contaminado la rama común.
+
+```
+PR #42  funcion-carrito → main
+  ✅ CI Backend / test    (build + tests, 47s)
+  ❌ CI Frontend / test   (falla el typecheck)   ← esto se arregla ANTES de fusionar
+```
+
+Si el check falla, haces más commits en la misma rama y los checks se relanzan solos. Un PR con checks en rojo no debería fusionarse nunca.
+
+**6. Branch protection: convertir la costumbre en regla**
+
+Por defecto, los checks son *informativos*: alguien con prisa aún puede fusionar en rojo, o saltarse el PR y hacer push directo a `main`. La **protección de rama** (Settings → Branches en GitHub) convierte la disciplina en muro: puedes exigir que solo se fusione vía PR, con los checks en verde y/o con aprobación de revisores. A partir de ahí, el gate deja de depender de la buena voluntad.
+
 ## Lo que NO hace
 
 - **No es parte de Git** — es una función de la plataforma (GitHub, GitLab...); Git solo conoce ramas y fusiones.
