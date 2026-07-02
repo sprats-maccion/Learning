@@ -9,3 +9,4 @@ Introducción a Docker para perfiles con conocimientos básicos de programación
 | # | Archivo | Por qué leerlo aquí |
 |---|---|---|
 | 1 | [Docker](Docker.md) | El punto de entrada: qué es, para qué sirve, cómo se escribe un Dockerfile a mano y cómo lo genera Claude paso a paso. |
+| 2 | [GitHub Container Registry (ghcr.io)](GitHub-Container-Registry.md) | Dónde viven las imágenes una vez construidas: qué es un registro, cómo se publica desde CI y cómo se versiona con etiquetas. |
